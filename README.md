@@ -1,3 +1,46 @@
+# Handwritten Digit Recognition using CNN (MNIST Dataset)
+
+A deep learning project to recognize handwritten digits (0–9) using the MNIST dataset and Convolutional Neural Networks (CNN) built with TensorFlow/Keras.
+
+![MNIST Sample](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
+
+---
+
+##  Project Objective
+
+The goal of this project is to:
+- Build a CNN-based deep learning model that can recognize handwritten digits from images.
+- Train the model on the MNIST dataset and evaluate its performance.
+- Visualize predictions and model metrics.
+- Understand how CNNs can be applied in real-world digit recognition systems.
+
+---
+
+##  Tools & Technologies
+
+- **Language:** Python  
+- **Libraries:** TensorFlow, Keras, NumPy, Matplotlib, Seaborn, scikit-learn  
+- **Dataset:** MNIST (from `tensorflow.keras.datasets`)  
+- **IDE:** Jupyter Notebook / Google Colab  
+
+---
+
+##  Dataset Details
+
+- **Name:** MNIST (Modified National Institute of Standards and Technology)  
+- **Images:** 28x28 grayscale  
+- **Training Set:** 60,000 images  
+- **Test Set:** 10,000 images  
+- **Labels:** Digits from 0 to 9  
+
+---
+
+##  How to Run the Project
+
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/your-username/handwritten-digit-recognition.git
+   cd handwritten-digit-recognition
 
 # Import necessary libraries
 import tensorflow as tf ** # TensorFlow library for machine learning**
