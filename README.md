@@ -78,3 +78,41 @@ plt.show()
 # Predict
 pred = model.predict(np.expand_dims(x_test[index], axis=0))
 print("Predicted Label:", np.argmax(pred))
+
+#Model Architecture (CNN)
+Conv2D → MaxPooling2D → Conv2D → MaxPooling2D
+
+Flatten → Dense → Dropout → Dense (Softmax)
+
+model = Sequential([
+    Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),
+    MaxPooling2D((2,2)),
+    Conv2D(64, (3,3), activation='relu'),
+    MaxPooling2D((2,2)),
+    Flatten(),
+    Dense(128, activation='relu'),
+    Dropout(0.25),
+    Dense(10, activation='softmax')
+])
+Results
+Test Accuracy: ~98%
+
+Loss: Very low, indicating good generalization
+
+Applications
+Bank cheque processing
+
+Postal code recognition
+
+Form digitization
+
+Educational tools (automated grading)
+
+License
+This project is open-source and available under the MIT License.
+
+ Contact
+If you have any questions or suggestions, feel free to reach out!
+Name: James Alhat
+Email: jamesalhat3@gmail.com
+GitHub: jamesalhat-27
